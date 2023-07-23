@@ -54,12 +54,12 @@ export class AppComponent implements OnInit {
     let coefficient: number = 1;
 
     if (this.currency === '$') {
-      newCurrency = '₽';
+      newCurrency = 'CHF';
       coefficient = 80;
-    } else if (this.currency === '₽') {
-      newCurrency = 'BYN';
+    } else if (this.currency === 'CHF') {
+      newCurrency = 'ILS';
       coefficient = 3;
-    } else if (this.currency === 'BYN') {
+    } else if (this.currency === 'ILS') {
       newCurrency = '€';
       coefficient = 0.9;
     } else if (this.currency === '€') {
